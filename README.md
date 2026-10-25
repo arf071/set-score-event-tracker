@@ -7,7 +7,7 @@ Built at Protohacks 2026. No machine learning: HSV color tracking with OpenCV.
 ## Demo
 | Enclosure | Tracker window |
 |---|---|
-| <img src="docs/enclosure.jpg" width="400" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.png" width="400" alt="Tracker window with net and floor lines"> |
+| <img src="docs/enclosure.jpg" width="400" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.jpg" width="400" alt="Tracker window with net and floor lines"> |
 
 ## How it works
 1. **Vision (Python + OpenCV):** Masks the ball's yellow and blue panels, merges them, finds the largest blob, and checks it against a calibrated floor line and net line.
