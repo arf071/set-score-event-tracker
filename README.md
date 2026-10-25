@@ -4,6 +4,13 @@ A webcam watches a volleyball, detects when it hits the floor, and awards the po
 
 Built at Protohacks 2026. No machine learning: HSV color tracking with OpenCV.
 
+## Demo
+
+| Scoreboard enclosure | What the camera sees |
+|---|---|
+| <img src="docs/enclosure.jpg" width="420" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.png" width="420" alt="Tracker window with net and floor lines"> |
+| LCD score, red/blue LEDs, buzzer, and flag | Ball detection, motion trail, net line (white), and floor line (red) |
+
 ## How it works
 1. **Vision (Python + OpenCV):** Masks the ball's yellow and blue panels, merges them, finds the largest blob, and checks it against a calibrated floor line and net line.
 2. **Scoring:** The ball touching the floor for a couple of frames counts as a point. The side of the net decides the team. A rearm margin and cooldown prevent double counts.
@@ -25,10 +32,10 @@ Arduino UNO R3, SG90 servo, 16x2 LCD1602 (16-pin parallel) with 10k contrast pot
 LCD power: VSS, RW, and K to GND; VDD and A to 5V; V0 to the middle of the contrast pot. All grounds are shared.
 
 ## Run it
-1. Upload `arduino/set_scoreboard/set_scoreboard.ino` with the Arduino IDE (board: Arduino Uno), then close the Serial Monitor.
+1. Upload `set_scoreboard.ino` with the Arduino IDE (board: Arduino Uno). If the IDE asks to put it in a folder named `set_scoreboard`, click OK. Close the Serial Monitor afterward.
 2. `pip install -r requirements.txt`
-3. In `python/tracker.py`, tune the HSV ranges for your ball and set `USE_SERIAL = True`.
-4. `python python/tracker.py`
+3. In `tracker.py`, tune the HSV ranges for your ball and set `USE_SERIAL = True`.
+4. `python tracker.py`
 5. Keys: `a`/`d` move the net line, `w`/`s` move the floor line, `r` resets the score, `q` quits.
 
 ## Tuning tips
@@ -40,4 +47,4 @@ LCD power: VSS, RW, and K to GND; VDD and A to 5V; V0 to the middle of the contr
 60 fps camera, out-of-bounds lines, rally and serve detection, other balls, web dashboard.
 
 ## AI use
-Code was written and debugged with help from an AI assistant (Claude). Hardware assembly, tuning, and testing were done by the team.
+Code was written and debugged with help from an AI assistant (Claude). Hardware assembly, tuning, and testing were done by the project author.
