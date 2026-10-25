@@ -18,9 +18,15 @@ Built at Protohacks 2026. No machine learning: HSV color tracking with OpenCV.
 ## Hardware
 Arduino UNO R3, SG90 servo, 16x2 LCD1602 (16-pin parallel) with 10k contrast pot, red and blue LEDs with 220 ohm resistors, buzzer, breadboard power module, Logitech webcam, laptop.
 
-| Wiring diagram | Actual wiring |
-|---|---|
-| <img src="docs/wiring-diagram.jpg" width="400" alt="Wiring diagram"> | <img src="docs/wiring-actual.jpg" width="400" alt="Actual wiring on the breadboard"> |
+### Wiring diagram
+<p align="center">
+  <img src="docs/wiring-diagram.jpg" width="800" alt="Wiring diagram">
+</p>
+
+### Actual wiring
+<p align="center">
+  <img src="docs/wiring-actual.jpg" width="400" alt="Actual wiring on the breadboard">
+</p>
 
 | Part | Arduino pin |
 |---|---|
