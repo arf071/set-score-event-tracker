@@ -7,7 +7,7 @@ Built at Protohacks 2026. No machine learning: HSV color tracking with OpenCV.
 ## Demo
 | Enclosure | Tracker window |
 |---|---|
-| <img src="docs/enclosure.jpg" width="400" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.jpg" width="400" alt="Tracker window with net and floor lines"> |
+| <img src="docs/enclosure.jpg" width="400" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.png" width="400" alt="Tracker window with net and floor lines"> |
 
 ## How it works
 1. **Vision (Python + OpenCV):** Masks the ball's yellow and blue panels, merges them, finds the largest blob, and checks it against a calibrated floor line and net line.
@@ -17,6 +17,10 @@ Built at Protohacks 2026. No machine learning: HSV color tracking with OpenCV.
 
 ## Hardware
 Arduino UNO R3, SG90 servo, 16x2 LCD1602 (16-pin parallel) with 10k contrast pot, red and blue LEDs with 220 ohm resistors, buzzer, breadboard power module, Logitech webcam, laptop.
+
+| Wiring diagram | Actual wiring |
+|---|---|
+| <img src="docs/wiring-diagram.jpg" width="400" alt="Wiring diagram"> | <img src="docs/wiring-actual.jpg" width="400" alt="Actual wiring on the breadboard"> |
 
 | Part | Arduino pin |
 |---|---|
