@@ -5,11 +5,9 @@ A webcam watches a volleyball, detects when it hits the floor, and awards the po
 Built at Protohacks 2026. No machine learning: HSV color tracking with OpenCV.
 
 ## Demo
-
-| Scoreboard enclosure | What the camera sees |
+| Enclosure | Tracker window |
 |---|---|
-| <img src="docs/enclosure.jpg" width="420" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.png" width="420" alt="Tracker window with net and floor lines"> |
-| LCD score, red/blue LEDs, buzzer, and flag | Ball detection, motion trail, net line (white), and floor line (red) |
+| <img src="docs/enclosure.jpg" width="400" alt="SET enclosure with LCD"> | <img src="docs/tracker-window.png" width="400" alt="Tracker window with net and floor lines"> |
 
 ## How it works
 1. **Vision (Python + OpenCV):** Masks the ball's yellow and blue panels, merges them, finds the largest blob, and checks it against a calibrated floor line and net line.
@@ -47,4 +45,4 @@ LCD power: VSS, RW, and K to GND; VDD and A to 5V; V0 to the middle of the contr
 60 fps camera, out-of-bounds lines, rally and serve detection, other balls, web dashboard.
 
 ## AI use
-Code was written and debugged with help from an AI assistant (Claude). Hardware assembly, tuning, and testing were done by the project author.
+Code was written and debugged with help of an AI assistant (Claude). Hardware assembly, tuning, and testing were done by the author.
