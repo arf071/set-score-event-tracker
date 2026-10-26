@@ -53,6 +53,3 @@ LCD power: VSS, RW, and K to GND; VDD and A to 5V; V0 to the middle of the contr
 
 ## What's next
 60 fps camera, out-of-bounds lines, rally and serve detection, other balls, web dashboard.
-
-## AI use
-Code was written and debugged with help of an AI assistant (Claude). Hardware assembly, tuning, and testing were done by the author.
